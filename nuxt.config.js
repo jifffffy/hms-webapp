@@ -46,7 +46,7 @@ export default {
   ],
 
   axios: {
-    baseURL: 'http://localhost:8080/api'
+    baseURL: process.env.NODE_ENV === 'dev' ? 'http://localhost:8080/api' : 'https://ospicapi.herokuapp.com/api/'
   },
 
   auth: {
