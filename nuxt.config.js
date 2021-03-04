@@ -68,7 +68,8 @@ export default {
   },
 
   router: {
-    middleware: ['auth']
+    middleware: ['auth'],
+    base: process.env.NODE_ENV ==="dev" ? "/" : "hms-webapp"
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
