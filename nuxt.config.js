@@ -46,7 +46,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.NODE_ENV === 'dev' ? 'http://localhost:8080/api' : 'https://ospicapi.herokuapp.com/api/'
+    baseURL: process.env.NODE_ENV === 'dev' ? 'http://localhost:8080/api/' : 'https://ospicapi.herokuapp.com/api/'
   },
 
   auth: {
@@ -69,7 +69,7 @@ export default {
 
   router: {
     middleware: ['auth'],
-    base: process.env.NODE_ENV ==="dev" ? "/" : "hms-webapp"
+    base: process.env.NODE_ENV ==="dev" ? "/" : "/hms-webapp/"
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
